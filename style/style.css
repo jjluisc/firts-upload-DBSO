@@ -331,7 +331,7 @@ a{
         left: 0;
         width: 35%;
         height: 100%;
-        background: #78a6fc; /* Puedes personalizar el color de fondo */
+        background: #78a6fc;
         z-index: 999;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
@@ -353,9 +353,9 @@ a{
   }
   
   .dropdown-wrapper {
-    /* ... */
+
     position: absolute;
-    top: 100%; /* Ajusta según sea necesario */
+    top: 100%; 
     left: 0;
     width: 100%;
     transform: translateY(-10px); /* Inicialmente oculto */
@@ -367,14 +367,14 @@ a{
   }
   
   .burger-menu:checked + .menu-wrapper {
-    /* Agrega la clase 'active' al contenedor principal al hacer clic en el botón */
+
     .dropdown-wrapper {
       transform: translateY(0);
     }
   }
 
 
-  @media (min-width: 730px) { /* Ajusta el ancho según tus necesidades */
+  @media (min-width: 730px) { 
 .sidebar {
       display: flex;
       position: end;
