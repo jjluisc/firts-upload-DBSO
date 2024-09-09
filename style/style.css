@@ -153,6 +153,10 @@ a{
     display: block;
 }
 
+.sidebar-boton{
+        list-style: none;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -331,6 +335,15 @@ a{
         z-index: 999;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
+      }
+    
+      .sidebar-boton{
+        display: flex;
+        position: relative;
+        translate: translate(-100%);
+        padding-right: 0px;
+        margin: 0px;
+
       }
 }
 
