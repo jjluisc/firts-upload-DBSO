@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Don bosco School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header class="menu__wrapper">
+        <div class="menu__bar">
+            <a href="#" title="Identidad" aria-label="home" class="logo">
+                <img src="logo.png" alt="logo" class="logo__img" width="150px">
+            </a>
+            <nav class="sidebar">
+                <ul class="navigation action-buttons hide">
+                    <li class="">
+                        <button>
+                            <h1>Acceso </h1>
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16">
+                                <path
+                                    d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="dropdown__wrapper">
+                            <div class="dropdown">
+                                <ul class="list-items-with-description">
+                                    <li>
+                                       <a href="https://visualcx.co/"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+                                            <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                                            <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                                        </svg>
+                                        <div class="item-title">
+                                            <h3>Calificaciones</h3>
+                                            <p>Acceso a CX</p>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+                                            <path d="M4 12l8 4l8 -4" />
+                                            <path d="M4 16l8 4l8 -4" />
+                                        </svg>
+                                        <div class="item-title">
+                                            <h3>Formatos</h3>
+                                            <p>Acceso a Docentes</p>
+                                        </div>
+                                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a #docs">
+                            Identidad
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#templates" title="novedades">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#customers">
+                            FAQs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#enterprise">
+                            SQR
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pricing" >
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+
+        </div>
+    </nav>
+        <div class="navigation action-buttons hide" >
+            <a href="#log-in" title="Log in" class="secondary">
+                Log In
+            </a>
+            <a href="#sign-up" title="Sign up" class="primary">
+                Sign up
+            </a>
+        </div>
+        <button aria-label="Open menu" class="burger-menu" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 8l16 0" />
+                <path d="M4 16l16 0" />
+            </svg>
+        </button>
+        <script>
+const burgerMenu = document.querySelector('.burger-menu');
+const actionButtons = document.querySelector('.action-buttons');
+const sidebar = document.querySelector('.sidebar');
+
+burgerMenu.addEventListener('click', () => {
+  actionButtons.classList.toggle('hide');
+  sidebar.classList.toggle('show');
+});
+        </script>
+    </header>
+</body>
+
+</html>
