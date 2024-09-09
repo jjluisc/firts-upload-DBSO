@@ -23,6 +23,9 @@
     --primary-bg: #EDEDED;
     --primary-bg-hover: #CCCCCC;
     --primary-text: #0E0E0E;
+    --third-bg: #56caff;
+    --third-bg-hover:#cccccc;
+    --third-text:#ffffff
 }
 
 body {
@@ -263,6 +266,20 @@ a{
 .primary:hover {
     background: var(
         --primary-bg-hover
+    );
+}
+.third {
+    color: var(--third-text);
+    border-radius: 6px;
+    background: var(--third-bg);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--gray-border);
+    border-radius: 6px;
+}
+
+.third:hover {
+    background: var(
+        --third-bg-hover
     );
 }
 
