@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Don bosco School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"></head>
+
+<body>
+    <header class="menu__wrapper">
+        <div class="menu__bar">
+            <a href="#" title="Identidad" aria-label="home" class="logo">
+                <img src="../img/logo.png" alt="logo" class="logo__img" width="150px">
+            </a>
+            <nav class="sidebar">
+                <ul class="navigation action-buttons hide">
+            
+                    <li>
+                        <a href="../rcs/qs.html">
+                            ¿Quiénes somos?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html" title="novedades">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"">
+                            Calendario
+                        </a>
+                    </li>
+                                       <li>
+                        <a href="#"">
+                            Documentos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            FAQs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            SQR
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" >
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="·incripciones" title="Incripciones" class="third">
+                            Incripciones 
+                        </a>
+                    </li>
+                    <li class="item-title">
+                        <button>
+                            <h1>Acceso </h1>
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16">
+                                <path
+                                    d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="dropdown__wrapper">
+                            <div class="dropdown">
+                                <ul class="list-items-with-description">
+                                    <li>
+                                       <a href="https://visualcx.co/"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+                                            <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                                            <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                                        </svg>
+                                        <div class="item-title">
+                                            <h3>Calificaciones</h3>
+                                            <p>Acceso a CX</p>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+                                            <path d="M4 12l8 4l8 -4" />
+                                            <path d="M4 16l8 4l8 -4" />
+                                        </svg>
+                                        <div class="item-title">
+                                            <h3>Formatos</h3>
+                                            <p>Acceso a Docentes</p>
+                                        </div>
+                                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+        </div>
+    </nav>
+        <div class="sidebar-boton action-buttons hide" >
+              
+            <li class="">
+            <a href="#log-in" title="Log in" class="secondary">
+                Log In
+            </a>
+            </li>
+            <li class="">
+            <a href="#sign-up" title="Sign up" class="primary">
+                Sign up
+            </a>
+            </li>
+        </div>
+        <button aria-label="Open menu" class="burger-menu" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 8l16 0" />
+                <path d="M4 16l16 0" />
+            </svg>
+        </button>
+        <script>
+const burgerMenu = document.querySelector('.burger-menu');
+const actionButtons = document.querySelector('.action-buttons');
+const sidebar = document.querySelector('.sidebar');
+
+burgerMenu.addEventListener('click', () => {
+  actionButtons.classList.toggle('hide');
+  sidebar.classList.toggle('show');
+});
+        </script>
+    </header>
+    <div class="banner">
+        <img src="../img/japan.jpg" alt="" width="1500px">
+    </div>
+    <div class="cont">
+        <div class="card">
+            <figure>
+                <img src="../img/cont1.png" alt="">
+            </figure>
+        
+        <h3> Misión</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta sunt commodi, recusandae aut officiis placeat sapiente excepturi, eum maxime eaque accusamus beatae quo molestias aspernatur tempora ut, quaerat ratione?</p>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="../img/cont2.png" alt="">
+            </figure>
+        <h3> Visión</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta sunt commodi, recusandae aut officiis placeat sapiente excepturi, eum maxime eaque accusamus beatae quo molestias aspernatur tempora ut, quaerat ratione?</p>
+        </div>
+        <div class="card">
+        <figure>
+            <img src="../img/cont3.png" alt="">
+        </figure>
+        <h3> Valores</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta sunt commodi, recusandae aut officiis placeat sapiente excepturi, eum maxime eaque accusamus beatae quo molestias aspernatur tempora ut, quaerat ratione?</p>
+    </div>
+</div>
+
+
+<footer class="pie">
+	<div>
+	  <div class="row">
+		  <div class="col-xs-12 col-md-6" >
+			  <h6 class="text-white lead"> ENCUENTRANOS EN LAS REDES:</h6>
+			  <h6 class="text-white">
+                Don Bosco School @2024.<br>
+			  </h6>
+		  </div>
+		  <div class="col-xs-12 col-md-6">
+		  <div class="pull-right">
+				<div class="redes-footer">
+					<a href="https://www.instagram.com/toys_crochet15/"><img src="../img/inst.png"></a>
+				</div>
+		  </div>
+		  <div class="row"> <p class="text-white small text-right">instagram</p></div>
+	  </div>
+	</div>  
+  </div>
+  </footer>
+</body>
+
+</html>
