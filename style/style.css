@@ -35,12 +35,14 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 a{
@@ -52,7 +54,7 @@ a{
     justify-content: space-between;
     width: 100%;
     z-index: 2;
-    
+    gap: 1.5rem;
     background: var(--background-bg);
     height: var(--navbar-height);
     padding: 0 0.8rem;
@@ -83,7 +85,7 @@ a{
     flex-direction: row;
     list-style-type: none;
     align-items: center;
-    
+    gap: 1rem;
     padding-left: 280px;
     position: relative;
 }
@@ -369,13 +371,16 @@ a{
         display: block;
         position: flex;
         translate: -300px;
+
     }
     .sidebar{
         position: fixed;
         top: 0;
         left: 0;
-        width: 40%;
+        width: 45%;
         height: 100%;
+        padding-top:17px ;
+        padding-left: 20px;
         background: #78a6fc;
         z-index: 999;
         min-width: 180px ;
@@ -392,30 +397,32 @@ a{
 
       }
 
-  .menu-wrapper {
-    position: relative; /* Para posicionar el menú desplegable */
-  }
+      body{
+        opacity: 1;
+      }
+      .menu-wrapper {
+        position: absolute; /* Para posicionar el menú desplegable */
+        }
   
-  .dropdown-wrapper {
-
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    width: 100%;
-    transform: translateY(-10px); /* Inicialmente oculto */
-    transition: transform 0.3s ease-in-out;
-  }
+        .dropdown-wrapper {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        transform: translateY(-10px); /* Inicialmente oculto */
+        transition: transform 0.3s ease-in-out;
+        }
   
-  .menu-wrapper.active .dropdown-wrapper {
-    transform: translateY(0); /* Despliega el menú */
-  }
-  
-  .burger-menu:checked + .menu-wrapper {
-    .dropdown-wrapper {
-      transform: translateY(0);
-    }
-  }
-}
+        .menu-wrapper.active .dropdown-wrapper {
+            transform: translateY(0); /* Despliega el menú */
+        }
+        
+        .burger-menu:checked + .menu-wrapper {
+            .dropdown-wrapper {
+            transform: translateY(0);
+            }
+        }
+        }
 
   @media (min-width: 730px) { 
 .sidebar {
@@ -505,17 +512,14 @@ a{
     height: 600px;
     overflow: hidden;
     justify-content: center;
-    position: initial;
+    position: static;
 }
 
 .banner img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
-
-
 
 .nosotros{
     width: 100%;
@@ -610,10 +614,9 @@ a{
         flex-direction: column;
     }
     .banner{
-        height: 300px;
+        width: 100%;
+        height: 400px;
     }
-
-
 }
 
 /*login*/
