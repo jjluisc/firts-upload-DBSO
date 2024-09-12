@@ -432,11 +432,15 @@ a{
     }
 .navigation{
     display: flex;
-    flex-wrap: nowrap;
-    padding: 0%;
+    position: relative;
+    padding: 0;
+}
+.navigation li a{
+    width: clamp();
+    justify-items: end;
 }
 
-}
+  }
  .show {
     transform: translateX(0);
   }
