@@ -35,6 +35,7 @@ body {
     background: var(--background);
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 * {
@@ -52,7 +53,7 @@ a{
     justify-content: space-between;
     width: 100%;
     z-index: 2;
-    gap: 1.5rem; 
+    
     background: var(--background-bg);
     height: var(--navbar-height);
     padding: 0 0.8rem;
@@ -83,7 +84,7 @@ a{
     flex-direction: row;
     list-style-type: none;
     align-items: center;
-    gap: 1rem;
+    
     padding-left: 280px;
     position: relative;
 }
