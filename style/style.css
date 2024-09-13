@@ -29,6 +29,12 @@
     --third-text-hover:rgb(255, 145, 2);
     --footer-bg:#518040;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 
 body {
     background: var(--background);
@@ -36,13 +42,6 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
 }
 
 a{
@@ -54,7 +53,7 @@ a{
     justify-content: space-between;
     width: 100%;
     z-index: 2;
-    gap: 1.5rem;
+
     background: var(--background-bg);
     height: var(--navbar-height);
     padding: 0 0.8rem;
@@ -85,7 +84,7 @@ a{
     flex-direction: row;
     list-style-type: none;
     align-items: center;
-    gap: 1rem;
+    
     padding-left: 280px;
     position: relative;
 }
@@ -438,7 +437,7 @@ a{
 .navigation li a{
     width: clamp();
     justify-items: end;
-}
+} 
 
   }
  .show {
@@ -539,39 +538,70 @@ a{
     display: flex;
     flex-direction: column;
     padding: 80px;
+    overflow: hidden;
 }
 
 .nos-img img{
-    width: 200px;
+    width: 400px;
     align-self: center;
+    position: relative;
+    transition: transform 0.5s ease;
+    animation: pulse 5s infinite alternate;
 }
 
-.nos-img img:hover{
-    transform: scale(1.1);
-    transform-origin: center;
-    transition: transform 0.5s ease;
-}
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1)
+    }
+
+    100% {
+      transform: scale(1);
+    }
+
+  }
 
 .nos-tex{
     width: 50%;
     height: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: #0004ff;
+    
 }
 
 .nos-tex h3{
     color: white;
-    font-size: 2rem;
+    display: block;
+    font-size: 1.5rem;
     font-weight: 600;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 6ch;
+    /*cambiar el numero de width segun el numero de caracteres + 1*/
+    text-align: justify;
+    font-family: 'cabin';
+    animation: typing 3s steps(6), blink 4s infinite step-end alternate ;
+    overflow: hidden;
+}
+@keyframes typing {
+    from {width:0;}
+}
+@keyframes blink {
+    50%{ border-color: transparent;}
 }
 .nos-tex p{
     color: white;
     font-size: 1.2rem;
     line-height: 1.5;
 }
+
+
 .cont{
     width: 100%;
     display: flex;
