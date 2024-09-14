@@ -555,7 +555,7 @@ a{
       transform: scale(1);
     }
     50% {
-      transform: scale(1.1)
+      transform: scale(1.06)
     }
 
     100% {
@@ -572,7 +572,6 @@ a{
     align-items: center;
     padding: 20px;
     background-color: #0004ff;
-    
 }
 
 .nos-tex h3{
@@ -597,8 +596,50 @@ a{
 }
 .nos-tex p{
     color: white;
+    font-family: 'cabin';
     font-size: 1.2rem;
     line-height: 1.5;
+}
+
+.nosotros-map{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+
+}
+.nos-map{
+    width: 50%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #0004ff;
+}
+.map{
+    width: 636px;
+    height: 360px;
+}
+
+@media(min-width:730px){
+    .nosotros{
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+    .nos-img img{
+        width: 320px;
+    }
+    .nos-tex{
+        padding: 40px;
+    }
+}
+@media(max-width:730px){
+    .nosotros-map{
+        display: block;
+        justify-content: center;  
+    }
 }
 
 
@@ -608,6 +649,11 @@ a{
     position: relative;
     align-items: center;
 
+}
+@media (max-width:985px){
+    .cont{
+        flex-direction: column;
+    }
 }
 .card{
     width: 80%;
@@ -620,7 +666,7 @@ a{
     transition: all 400ms ease;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 50px;
 }
 
 .card:hover{
@@ -628,7 +674,7 @@ a{
     transform: translateY(-3%);
 }
 .card img{
-    width: 200px;
+    width: 100px;
     align-self: center;
 }
 
@@ -652,6 +698,92 @@ a{
         height: 400px;
     }
 }
+
+.nos-filosofia{
+    width: 100%;
+    margin: 90px;
+    height: 600px;
+    overflow: hidden;
+    display: relative;
+}
+@media(max-width:730px){
+.nos-filosofia{
+    width: 100%;
+    margin: 30px;
+    height: 400px;
+}
+
+}
+.filosofia-tex1{
+    width: 50%;
+    height: 100%;
+    background-color:#0004ff ;
+    display: flex;
+    flex-direction: center;
+    padding: 20px;
+}
+.filosofia-tex2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color:#56caff ;
+}
+.card-2{
+    width: 80%;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.card-2:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+.card-2 img{
+    width: 100%;
+    height: 400px;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+}
+
+.card-2 h3{
+    padding: 10px 50px;
+    text-align: center;
+}
+.card-2 p{
+    line-height: 1.5;
+    font-family: 'cabin', sans-serif;
+    color: #6a6a6a;
+    padding: 10px;
+    font-weight: 400;
+}
+.filosofia-tex2 p {
+
+    color: rgb(0, 43, 185);
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 9ch;
+    /*cambiar el numero de width segun el numero de caracteres + 1*/
+    text-align: justify;
+    font-family: 'cabin';
+    animation: typing 3s steps(6), blink 4s infinite step-end alternate ;
+    overflow: hidden;
+
+  }
 
 /*login*/
 .login{

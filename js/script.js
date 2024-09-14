@@ -1,18 +1,51 @@
-
-console.log('estoy funcionando');
-const btnLeft= document.querySelector('.btn-left'),
- btnRight= document.querySelector('.btn-right'),
- slider=document.querySelector('#slider'),
- sliderSection=document.querySelector('.slider-section');
-
- btnLeft.addEventListener("click",e=>moveToLeft());
- btnRight.addEventListener("click",e=>moveToright());
-let operation=0;
-        
-function moveToright(){
- slider.style.transform=`translateY(-${operation}%)`;
-}
-
-
-function moveToLeft(){
-}
+$(function() {
+				
+    var Page = (function() {
+      
+      var $navArrows = $( '#nav-arrows' ).hide(),
+          $shadow = $( '#shadow' ).hide(),
+          slicebox = $( '#sb-slider' ).slicebox( {
+            onReady : function() {
+              
+              $navArrows.show();
+              $shadow.show();
+              
+            },
+            orientation : 'r',
+            cuboidsRandom : true,
+            disperseFactor : 30
+          } ),
+          
+          init = function() {
+            
+            initEvents();
+            
+          },
+          initEvents = function() {
+            
+            // add navigation events
+            $navArrows.children( ':first' ).on( 'click', function() {
+              
+              slicebox.next();
+              return false;
+              
+            } );
+            
+            $navArrows.children( ':last' ).on( 'click', function() {
+              
+              slicebox.previous();
+              return false;
+              
+            } );
+            
+          };
+      
+      return { init : init };
+      
+    })();
+    
+    Page.init();
+    
+  });
+  
+  
